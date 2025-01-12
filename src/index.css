@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+input {
+  border: 1px solid #ccc;
+  width: 50%;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: #000000;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+button:hover {
+  background-color: rgb(192, 22, 0);
+  color: #ffffff;
+}
+
+.btn__add {
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  color: #000000;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.btn__add:hover {
+  background-color: rgb(255, 225, 76);
+  color: #ffffff;
+}
+
+.todo {
+  display: flex;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.todo__title {
+  width: 1000px;
+  user-select: none;
+}
+
+.todos__empty {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.todo__icon {
+  margin: 0 20px 0 20px;
+  color: #0d6e7f;
+  font-size: 2rem;
+}
+
+.todo__icon-check {
+  margin: 0 20px 0 20px;
+  font-size: 2rem;
+  color: rgb(14, 92, 2);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.todo__icon-delete {
+  margin: 0 20px 0 20px;
+  font-size: 2rem;
+  color: rgb(255, 4, 4);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.todo__icon-delete:hover {
+  transform: scale(1.5);
+}
+
+.todo__icon-check:hover {
+  transform: scale(1.5);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
